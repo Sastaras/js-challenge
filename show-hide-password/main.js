@@ -2,7 +2,7 @@ const input = document.getElementById("input");
 const display = document.getElementById("display");
 const btn = document.getElementById('btn');
 
-/* j'ai un peu triché et ajouté un bouton dans le html, mais c'est plus joli comme ça que sur la checkbox*/
+//j'ai un peu triché et ajouté un bouton dans le html, mais c'est plus joli comme ça que sur la checkbox
 
 btn.onmousedown = function () {
 
@@ -30,7 +30,7 @@ document.getElementById('checkbox').addEventListener('click', function () {
     }
 })
 
-/* solution deux,j'ai laissé le addeventlistener 'click' comme demandé, même si ce n'est pas pertinent */
+// solution 2, j'ai laissé le addeventlistener 'click' comme demandé, même si ce n'est pas pertinent 
 
 /*document.getElementById('checkbox').addEventListener('click', function () {
     if (checkbox.checked == true){
