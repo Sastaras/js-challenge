@@ -11,7 +11,6 @@ input.addEventListener('keyup', function (e) {
         capsWarning.style.display = "none";
     }
     if (e.getModifierState('NumLock')) {
-
         numWarning.style.display = "block";
     }
     else {
