@@ -18,7 +18,7 @@ input.addEventListener('keydown', function (e) {
     }
 })
 
-input.addEventListener("blur", function (event) {
+input.addEventListener("blur", function (e) {
 
     capsWarning.style.display = "none";
     numWarning.style.display = "none";
