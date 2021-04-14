@@ -3,17 +3,24 @@ const capsWarning = document.getElementById("warning");
 const numWarning = document.getElementById("numwarning");
 
 input.addEventListener('keyup', function (e) {
+
     if (e.getModifierState('CapsLock')) {
         capsWarning.style.display = "block";
-    } else {
+    }
+    else {
         capsWarning.style.display = "none";
     }
-})
-
-input.addEventListener('keyup', function (e) {
     if (e.getModifierState('NumLock')) {
+
         numWarning.style.display = "block";
-    } else {
+    }
+    else {
         numWarning.style.display = "none";
     }
 })
+
+input.addEventListener("blur", function (event) {
+
+    capsWarning.style.display = "none";
+    numWarning.style.display = "none";
+});
