@@ -11,12 +11,12 @@
         <fieldset>
             <legend>Register:</legend>
             <label for="login">Login: </label>
-            <input type="text" name="login"><br>
+            <input type="text" name="login"><br/>
             <label for="password">Password: </label>
             <input type="password" name="password" id="password">
             <span id="msg-length"></span>
             <span id= "msg-case"></span>
-            <span id= "msg-num"></span></br>
+            <span id= "msg-num"></span><br/>
             <label for="check-password">Re-enter your password: </label>
             <input type="password" name="check-password" id="check-password">
             <span id="msg"></span><br/>
