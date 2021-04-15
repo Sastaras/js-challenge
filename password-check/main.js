@@ -5,9 +5,11 @@ const msg = document.getElementById("msg");
 const msgLength = document.getElementById("msg-length");
 const msgSpecial = document.getElementById("msg-special");
 const msgNum = document.getElementById("msg-num");
+const msgCase = document.getElementById("msg-case");
 
 const specialRegex = /^(?=.*[!@#$%^&*])/;
 const numRegex = /^(?=.*[0-9])/;
+const caseRegex =/^(?=.*[A-Z])/;
 
 checkPassword.addEventListener('keyup', function () {
 
@@ -39,6 +41,12 @@ password.addEventListener('keyup', function () {
     }
     else msgNum.innerHTML = '';
 
+    if (!caseRegex.test(password.value)) { 
+        msgCase.innerHTML = '⚠️The password must contain at least 1 upercase!';
+        msgCase.style.color = 'blue';
+    }
+    else msgCase.innerHTML = '';
+
 })
 
 /*********************************************************/
@@ -55,7 +63,11 @@ password.addEventListener("blur", function (e) {
 
     if (numRegex.test(password.value)) { 
         msgNum.innerHTML = '';
-}});
+    }
+    if (caseRegex.test(password.value)) { 
+    msgCase.innerHTML = '';
+    }
+});
 
 checkPassword.addEventListener("blur", function (e) {
 
