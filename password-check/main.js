@@ -14,7 +14,7 @@ checkPassword.addEventListener('keyup', function () {
     else msg.innerHTML = ''; 
 
 })
-
+// correction en cours, la recherche de charactères spéciaux et de nombres ne fonctionne pas en l'état
 password.addEventListener('keyup', function () {
 
     if (password.value.length < 6) {
