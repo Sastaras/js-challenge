@@ -15,7 +15,7 @@
             <label for="password">Password: </label>
             <input type="password" name="password" id="password">
             <span id="msg-length"></span>
-            <span id= "msg-case"></span>
+            <span id= "msg-special"></span>
             <span id= "msg-num"></span><br/>
             <label for="check-password">Re-enter your password: </label>
             <input type="password" name="check-password" id="check-password">
