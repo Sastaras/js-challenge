@@ -28,5 +28,4 @@ pasteText.addEventListener("blur", function (e) {
 
        check.innerHTML = '';
     } 
-    
 })
