@@ -12,6 +12,7 @@
         <button id="button-copy">Copy text</button>
       <br>
         <textarea name="name" rows="8" cols="80" id="paste-text" placeholder="Paste your text here..."></textarea>
+        <span id="check"></span>
     </div>
     <script type="text/javascript" src="main.js"></script>
   </body>
